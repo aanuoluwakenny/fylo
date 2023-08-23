@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 28%, 15%);
+    overflow-x: hidden;
+}
+p{
+    color: #fff;
+    font-weight: 100;
+}
+h2, h3{
+    color: #fff;
+    font-weight: 600;
+}
+h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    width: 100px;
+}
+li > a{
+    color: white;
+}
+
+.ng {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 800px;
+    position: relative;
+
+}
+.ng h2{
+    font-size: 30px;
+}
+.in{
+    margin-bottom: 15px;
+}
+button{
+    border-radius: 15px;
+}
+.btn{
+    padding: 8px;
+}
+.curvebg{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+.bg{
+    background-color: hsl(218, 28%, 13%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin: 50px; */
+}
+.container > div {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.container > div p {
+width: 70%;
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.con > div {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.con > div p {
+    width: 70%;
+    }
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 50px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.cont img{
+    width: 400px;
+}
+
+.cont > div {
+    width: 40%;
+}
+.cont > div p {
+    width: 90%
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.desc > div{
+    
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(219, 30%, 18%);
+    border-radius: 20px; 
+    height: 25vh;
+    width: 25vw;
+    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 31%;
+    background: hsl(219, 30%, 18%);
+    border-radius: 20px;
+    margin-bottom: 5%; */
+}
+/* .row p{
+    padding: 0;
+    width: 80%;
+}
+.row{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    cursor: pointer;
+} */
+.row p{
+    margin-left: 20px;
+}
+.row img{
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+} 
+@media(max-width: 700px){
+
+    h1{
+        color: #fff;
+        font-weight: 600;
+        font-size: 26px;
+    }
+    .ng img{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .con{
+        flex-direction: column;
+    }
+    .row{
+        width: 50%;
+        height: 100%;
+    }
+    .curvebg{
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+    
+    }
+    .ng h2{
+        font-size: 24px;
+    }
+    .container > div {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .con > div {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 90px;
+    }
+    .cont > div{
+        width: 100%;
+    }
+
+
+    .desc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 60px;
+    }
+    .desc > div{
+        height: 25vh;
+        width: 60vw;
+    }
+    .desc > div p{
+        width:100%;
+        padding: 0 25px;
+    }
+}
