@@ -252,6 +252,12 @@ footer img{
     /* width: 30px; */
     font-size: 100px;
 }
+/* .icn{
+    display: flex;
+} */
+.icn .fa{
+    border: none;
+}
 
 
 @media(max-width: 700px){
@@ -386,7 +392,7 @@ footer img{
 }
 
 .subfoot{
-   margin: 0 35px;
+   margin: 10px 38px;
    width: 320px;
    height: 28vh;
    align-items: center;
@@ -407,6 +413,12 @@ footer img{
 .footer{
     flex-direction: column;
 }
+.foot img{
+    position: relative;
+    right: 80px;
+}
+
+
 }
 
 
