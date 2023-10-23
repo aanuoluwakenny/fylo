@@ -10,8 +10,9 @@ body{
 p{
     color: #fff;
     font-weight: 100;
+    font-size: 12px;
 }
-h2, h3{
+h2, h3, h5{
     color: #fff;
     font-weight: 600;
 }
@@ -19,6 +20,10 @@ h1{
     color: #fff;
     font-weight: 600;
     font-size: 40px;
+}
+a{
+    padding: 15px;
+    text-decoration: none;
 }
 
 header{
@@ -55,10 +60,17 @@ li > a{
     margin-bottom: 15px;
 }
 button{
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .btn{
-    padding: 8px;
+    padding: 10px 20px;
+    background-color: hsl(176, 68%, 64%);
+    width: 200px;
+}
+.btn a{
+    color: #fff;
+    /* padding: 12px; */
+
 }
 .curvebg{
     position: absolute;
@@ -68,13 +80,17 @@ button{
 }
 .bg{
     background-color: hsl(218, 28%, 13%);
+    padding-bottom: 10px;
 }
+.bg img{
+    margin-bottom: 20px;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* margin: 50px; */
 }
 .container > div {
     width: 35%;
@@ -110,7 +126,7 @@ width: 70%;
     gap: 50px;
     padding: 0px 50px;
     margin-top: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .cont img{
@@ -123,68 +139,152 @@ width: 70%;
 .cont > div p {
     width: 90%
 }
-a{
-    padding: 15px;
-    text-decoration: none;
-}
-header{
-    display: flex;
-    
+.quo{
+    position: relative;
+    top: 140px;
+    left: 95px;
+    /* overflow: hidden; */
 }
 .desc{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    margin: 100px;
+    padding-bottom: 100px;
+}
 
-}
-.desc > div{
-    
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: hsl(219, 30%, 18%);
-    border-radius: 20px; 
-    height: 25vh;
-    width: 25vw;
-    margin-bottom: 20px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 31%;
-    background: hsl(219, 30%, 18%);
-    border-radius: 20px;
-    margin-bottom: 5%; */
-}
-/* .row p{
-    padding: 0;
-    width: 80%;
-}
 .row{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    cursor: pointer;
-} */
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 20px 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* width: 900px; */
+    height: 25vh;
+}
 .row p{
-    margin-left: 20px;
+    width: 100%;
 }
 .row img{
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 20px;
     border-radius: 50%;
-} 
+    width: 25px;
+    margin-top: 10px;
+}
+/* .row h5{
+    display: inline;
+} */
+.test{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.test div{
+    margin-left: 10px;
+}
+footer{
+    background-color: hsl(216, 53%, 9%);
+}
+footer img{
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+.foot{
+    margin: 0;
+}
+.subfoot{
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 28vh;
+    margin: auto;
+    padding: 20px 20px 0;
+    border-radius: 5px;
+    position: relative;
+    bottom: 90px;
+}
+.subfoot input{
+    border-radius: 15px;
+    margin: 20px;
+    padding: 7px;
+    width: 350px;
+    display: inline;
+}
+.subfoot a{
+    background: hsl(198, 60%, 50%);
+    color: #fff;
+    border-radius: 15px; 
+    /* width: 100%; */
+    /* height: 20px; */
+    text-align: center;
+}
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subfoot p{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    /* padding-left: 100px; */
+    /* margin: 40px 100px 0; */
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+    /* border: 1px solid #fff; */
+}
+.footer > div{
+    width: 100%;
+    margin-right: 20px;
+    /* border: 1px solid #eee; */
+}
+.fa{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 5px;
+    /* width: 30px; */
+    font-size: 100px;
+}
+
+
 @media(max-width: 700px){
+    header{
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    header img{
+        width: 90%;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        width: 100px;
+        display: inline;
+    }
 
     h1{
         color: #fff;
         font-weight: 600;
-        font-size: 26px;
+        font-size: 20px;
+        
     }
     .ng img{
         width: 100%;
+
+    }
+    .ng h2{
+        font-size: 24px;
     }
     .container{
         flex-direction: column;
@@ -192,30 +292,35 @@ header{
     .con{
         flex-direction: column;
     }
-    .row{
-        width: 50%;
-        height: 100%;
-    }
+    
     .curvebg{
             position: absolute;
             bottom: 0;
             z-index: -1;
-            width: 100%;
+            width: 400px;
+            height: 200px;
     
     }
-    .ng h2{
-        font-size: 24px;
-    }
+    
     .container > div {
-        width: 50%;
+        /* width: 50%; */
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-bottom: 50px;
     }
+    .container > div p{
+        width: 200%;
+        font-size: 15px;
+    }
+    .container > div h2{
+        width: 200%;
+        font-size: 18px;
+    }
+    
     .con > div {
-        width: 35%;
+        /* width: 35%; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -223,6 +328,15 @@ header{
         width: 50%;
         margin-bottom: 50px;
     }
+    .con > div p{
+        width: 150%;
+        font-size: 15px;
+    }
+    .con > div h2{
+        width: 200%;
+        font-size: 18px;
+    }
+
     .cont{
         display: flex;
         align-items: center;
@@ -231,23 +345,68 @@ header{
         gap: 20px;
         margin-top: 90px;
     }
+    .cont img{
+        width: 100%;
+        text-align: center;
+    }
     .cont > div{
         width: 100%;
     }
-
+    .cont > div p{
+        font-size: 15px;
+    }
+    .cont > div h2{
+        width: 200%;
+        font-size: 18px;
+    }
 
     .desc{
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 60px;
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 230px;
+        gap: 20px;
     }
-    .desc > div{
-        height: 25vh;
-        width: 60vw;
-    }
-    .desc > div p{
-        width:100%;
-        padding: 0 25px;
-    }
+
+   .row{
+    margin: 0 50px;
+    height: 25vh;
+   }
+   .row p{
+   font-weight: 100;
+   padding: 2px;
+   }
+
+   .quo{
+    position: relative;
+    top: 27px;
+    left: 55px;
+    width: 6%;
 }
+
+.subfoot{
+   margin: 0 35px;
+   width: 320px;
+   height: 28vh;
+   align-items: center;
+}
+.subfoot input{
+    display: block;
+    width: 50vw;
+}
+.subfoot a{
+    margin: 0px;
+    padding: 7px 0px;
+    width: 50vw;
+}
+.sub{
+    flex-direction: column;
+}
+
+.footer{
+    flex-direction: column;
+}
+}
+
+
